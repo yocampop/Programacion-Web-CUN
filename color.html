@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Ejemplo Radio Button</title>
+<script>
+function cambiaColor(){
+    var i
+    for (i=0;i<document.fcolores.colorin.length;i++){
+if (document.fcolores.colorin[i].checked)
+break;
+}
+document.bgColor = document.fcolores.colorin [i].value
+}
+</script></head> <body>
+<form name = fcolores>
+    <input type="Radio" name="colorin" value="ffffff" checked> Blanco
+</br>
+<input type="Radio" name="colorin" value="ff0000" checked> Rojo
+</br>
+<input type="Radio" name="colorin" value="00ff00" checked> Verde
+</br>
+<input type="Radio" name="colorin" value="0000ff" checked> Azul
+</br>
+<input type="Radio" name="colorin" value="ffff00" checked> Amarillo
+</br>
+<input type="Radio" name="colorin" value="#008080" checked> Turquesa
+</br>
+<input type="Radio" name="colorin" value="ff00ff" checked> Morado
+</br>
+<input type="Radio" name="colorin" value="000000" checked> Negro
+</br> </br>
+<input type="Button" name="" value="cambia Color" onclick="cambiaColor()">
+<P>Selecciona un botón y presionar cambia color para realizar el cambio de fondo</P>
+<img src="https://vignette.wikia.nocookie.net/dragonball/images/7/75/Goku_vs_Vegeta_6.gif/revision/latest?cb=20100529160026&path-prefix=es" >
+
+
+</form>
+</body>
+
+
+</html>
